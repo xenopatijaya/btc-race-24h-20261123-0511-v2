@@ -49,7 +49,7 @@ function raceLevel(): number {
   const pos = closes[n - 11] > 0n ? mom10 : 0;
   if (peakSinceEntry !== null && now * 1000n < peakSinceEntry * 985n) return 0; // trailing stop
   if (pos <= 0) return 0;
-  if (pos < 0.001) return 2;
+  if (pos < 0.0012) return 2;
   if (pos < 0.003) return 4;
   return 5;
 }
